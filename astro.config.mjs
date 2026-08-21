@@ -32,7 +32,7 @@ export default defineConfig({
       logo: {
         src: './src/assets/logo.png',
       },
-      favicon: './src/assets/favicon.png',
+      favicon: '/favicon.png',
       customCss: ['./src/styles/custom.css'],
       social: [
         {
