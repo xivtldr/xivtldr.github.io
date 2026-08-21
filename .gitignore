@@ -13,3 +13,8 @@ dist/
 # OS-specific files
 .DS_Store
 Thumbs.db
+.vscode/
+
+# LLM stuff i don't need
+AGENTS.md
+CLAUDE.md
