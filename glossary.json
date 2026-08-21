@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "terms": {
+    "donut": {
+      "term": "Donut",
+      "aliases": [
+        "Donut",
+        "In",
+        "Dynamo In",
+        "donut"
+      ],
+      "wikipedia": null,
+      "caseSensitive": true,
+      "definition": "AoE pattern shaped like a donut. The safe spot is usually directly in the boss hitbox, or far away.",
+      "groupWith": null
+    }
+  }
+}

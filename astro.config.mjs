@@ -5,6 +5,7 @@ import { unified } from '@astrojs/markdown-remark';
 // Plugins
 import starlightMarkdownBlocks from 'starlight-markdown-blocks';
 import starlightThemeBlack from 'starlight-theme-black';
+import starlightGlossary from 'starlight-glossary';
 
 // Role shoutouts
 function roleBlock(role) {
@@ -85,6 +86,14 @@ export default defineConfig({
             healer: roleBlock('healer'),
             all: roleBlock('all'),
             deadly: roleBlock('deadly'),
+          },
+        }),
+        starlightGlossary({
+          autoTag: {
+            mode: 'all',
+          },
+          discovery: {
+            enabled: false,
           },
         }),
       ],
