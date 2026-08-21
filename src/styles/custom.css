@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
+
+@layer my-reset, starlight, black, my-overrides;
+
+@layer my-overrides {
+
+    @media (min-width: 768px) {
+        .content-panel {
+            padding-block-start: 4.5rem;
+            padding-inline: 3.5rem;
+        }
+    }
+
+
+    .sl-markdown-content * {
+        font-size: 1rem;
+    }
+
+    .sl-markdown-content :is(strong, b) {
+        font-weight: 600 !important;
+        /* Adjust this number to change boldness */
+    }
+
+    /* Tabs */
+    .tablist-wrapper [role='tablist'] {
+        border-bottom: none;
+        padding-bottom: 0.6rem;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .tablist-wrapper [role='tab'] {
+        padding: 0.3rem 0.5rem;
+        border-radius: 0.4rem;
+        background-color: transparent;
+        color: var(--sl-color-gray-3);
+        font-size: 0.85rem;
+        border: none;
+        box-shadow: none !important;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .tablist-wrapper [role='tab']::after,
+    .tablist-wrapper [role='tab']::before {
+        display: none !important;
+    }
+
+    .tablist-wrapper [role='tab']:hover {
+        background-color: var(--sl-color-gray-6);
+        color: var(--sl-color-gray-1);
+    }
+
+    .tablist-wrapper [role='tab'][aria-selected='true'] {
+        background-color: #b63333;
+        color: var(--sl-color-white);
+    }
+
+    #_top {
+        font-family: "Libre Franklin", serif;
+
+        border-bottom: 2px solid #b63333;
+        padding-bottom: 0.5rem;
+        width: 100%;
+        display: block;
+
+    }
+
+    .content-panel:has(#_top)+.content-panel {
+        padding-top: 0 !important;
+    }
+
+    /* Terminology highlighting */
+    u {
+        text-decoration: none;
+        background-color: #363b4263;
+        color: #fff;
+        padding: 0.1em 0.4em;
+        border-radius: 2px;
+        display: inline-block;
+        margin: 0 0.1em;
+    }
+
+    /* Tags for TB and RW */
+    mark {
+        text-decoration: none;
+        background-color: #0a70ff80;
+        color: white;
+        font-weight: 1000;
+        padding: 0.1em 0.4em;
+        border-radius: 2px;
+        display: inline-block;
+        margin: 0 0.1em;
+    }
+}

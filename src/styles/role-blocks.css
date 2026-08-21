@@ -1,0 +1,54 @@
+.role-block {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-block: 0.75rem;
+    font-size: 1em;
+}
+
+.role-block::after {
+    position: absolute;
+    bottom: -8px;
+    right: -1px;
+    font-size: 3em;
+    font-weight: 900;
+    opacity: 0.1;
+    pointer-events: none;
+    line-height: 1;
+    color: currentColor;
+}
+
+.role-block--tank {
+    background-color: #0f1a2e;
+}
+
+.role-block--tank::after {
+    content: '\1F6E1\FE0F TANK';
+}
+
+.role-block--healer {
+    background-color: #0d1f16;
+}
+
+.role-block--healer::after {
+    content: '\2719\FE0E HEALER';
+}
+
+.role-block--all {
+    background-color: #2e1414;
+}
+
+.role-block--all::after {
+    content: '\1F5E1\FE0E ALL';
+}
+
+.role-block--deadly {
+    background-color: transparent;
+}
+
+.role-block--deadly::after {
+    content: '\1F480\FE0E';
+    bottom: 5px;
+    left: -1px;
+}

@@ -1,0 +1,136 @@
+// @ts-check
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
+import { unified } from '@astrojs/markdown-remark';
+// Plugins
+import starlightThemeBlack from 'starlight-theme-black';
+import starlightMarkdownBlocks from 'starlight-markdown-blocks';
+
+// Role shoutouts
+function roleBlock(role) {
+  return {
+    label: role, // not rendered, just plugin metadata
+    css: ['./src/styles/role-blocks.css'],
+    render: ({ h, children }) =>
+      h('div', { class: `role-block role-block--${role}` }, children),
+  };
+}
+
+// https://astro.build/config
+
+export default defineConfig({
+  site: 'https://xivtldr.github.io/',
+  markdown: {
+    processor: unified(),
+  },
+
+  integrations: [
+    starlight({
+      title: 'XIV TLDR',
+      description: 'Quick guides for FFXIV duties.',
+
+      logo: {
+        src: './src/assets/logo.png',
+      },
+      favicon: './src/assets/favicon.png',
+      customCss: ['./src/styles/custom.css'],
+      social: [
+        {
+          icon: 'github',
+          label: 'GitHub',
+          href: 'https://github.com/xivtldr/xivtldr.github.io',
+        },
+      ],
+      editLink: {
+        baseUrl: 'https://github.com/xivtldr/xivtldr.github.io/edit/main/docs/',
+      },
+      defaultLocale: 'root',
+      locales: {
+        root: {
+          label: 'English',
+          lang: 'en',
+        },
+        /* 
+		de: {
+          label: 'Deutsch',
+          lang: 'de',
+        },
+        fr: {
+          label: 'Français ',
+          lang: 'fr',
+        },
+		es: {
+          label: 'Español ',
+          lang: 'es',
+        },
+		jp: {
+          label: '日本語 ',
+          lang: 'jp',
+        },
+		// */
+      },
+      components: {
+        ThemeProvider: './src/components/ForceDarkTheme.astro',
+        ThemeSelect: './src/components/EmptyComponent.astro',
+        SiteTitle: './src/components/SiteTitle.astro',
+      },
+      plugins: [
+        starlightThemeBlack({
+          docs: {
+            showMarkdownActions: false,
+          },
+        }),
+        starlightMarkdownBlocks({
+          blocks: {
+            tank: roleBlock('tank'),
+            healer: roleBlock('healer'),
+            all: roleBlock('all'),
+            deadly: roleBlock('deadly'),
+          },
+        }),
+      ],
+      sidebar: [
+        {
+          label: 'Alliance Raids',
+          items: [
+            // { label: 'A Realm Reborn', link: 'a/arr/landing' },
+            { label: 'Heavensward', link: 'a/hw/landing' },
+            { label: 'Stormblood', link: 'a/sb/landing' },
+            { label: 'Shadowbringers', link: 'a/shb/landing' },
+            // { label: 'Endwalker', link: 'a/ew/landing' },
+            // { label: 'Dawntrail', link: 'a/dt/landing' },
+            // { label: 'Evercold', link: 'a/ec/landing' },
+          ],
+        },
+        {
+          label: 'Raids',
+          items: [
+            // { label: 'A Realm Reborn', link: 'r/arr/landing' },
+            // { label: 'Heavensward', link: 'r/hw/landing' },
+            // { label: 'Stormblood', link: 'r/sb/landing' },
+            // { label: 'Shadowbringers', link: 'r/shb/landing' },
+            // { label: 'Endwalker', link: 'r/ew/landing' },
+            // { label: 'Dawntrail', link: 'r/dt/landing' },
+            // { label: 'Evercold', link: 'r/ec/landing' },
+          ],
+        },
+        {
+          label: 'Trials',
+          items: [
+            // { label: 'A Realm Reborn', link: 't/arr/landing' },
+            // { label: 'Heavensward', link: 't/hw/landing' },
+            // { label: 'Stormblood', link: 't/sb/landing' },
+            // { label: 'Shadowbringers', link: 't/shb/landing' },
+            { label: 'Endwalker', link: 't/ew/landing' },
+            { label: 'Dawntrail', link: 't/dt/landing' },
+            // { label: 'Evercold', link: 't/ec/landing' },
+          ],
+        },
+        {
+          label: 'XIV TLDR',
+          items: [{ label: 'Terminology', slug: 'about/terminology' }],
+        },
+      ],
+    }),
+  ],
+});
