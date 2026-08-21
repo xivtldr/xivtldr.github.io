@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { unified } from '@astrojs/markdown-remark';
 // Plugins
-import starlightThemeBlack from 'starlight-theme-black';
 import starlightMarkdownBlocks from 'starlight-markdown-blocks';
+import starlightThemeBlack from 'starlight-theme-black';
 
 // Role shoutouts
 function roleBlock(role) {
@@ -72,7 +72,6 @@ export default defineConfig({
       components: {
         ThemeProvider: './src/components/ForceDarkTheme.astro',
         ThemeSelect: './src/components/EmptyComponent.astro',
-        SiteTitle: './src/components/SiteTitle.astro',
       },
       plugins: [
         starlightThemeBlack({
@@ -94,41 +93,41 @@ export default defineConfig({
           label: 'Alliance Raids',
           items: [
             // { label: 'A Realm Reborn', link: 'a/arr/landing' },
-            { label: 'Heavensward', link: 'a/hw/landing' },
-            { label: 'Stormblood', link: 'a/sb/landing' },
-            { label: 'Shadowbringers', link: 'a/shb/landing' },
-            // { label: 'Endwalker', link: 'a/ew/landing' },
-            // { label: 'Dawntrail', link: 'a/dt/landing' },
-            // { label: 'Evercold', link: 'a/ec/landing' },
+            { label: 'Heavensward', link: 'a/hw/' },
+            { label: 'Stormblood', link: 'a/sb/' },
+            { label: 'Shadowbringers', link: 'a/shb/' },
+            // { label: 'Endwalker', link: 'a/ew/' },
+            // { label: 'Dawntrail', link: 'a/dt/' },
+            // { label: 'Evercold', link: 'a/ec/' },
           ],
         },
         {
           label: 'Raids',
           items: [
-            // { label: 'A Realm Reborn', link: 'r/arr/landing' },
-            // { label: 'Heavensward', link: 'r/hw/landing' },
-            // { label: 'Stormblood', link: 'r/sb/landing' },
-            // { label: 'Shadowbringers', link: 'r/shb/landing' },
-            // { label: 'Endwalker', link: 'r/ew/landing' },
-            // { label: 'Dawntrail', link: 'r/dt/landing' },
-            // { label: 'Evercold', link: 'r/ec/landing' },
+            // { label: 'A Realm Reborn', link: 'r/arr/' },
+            // { label: 'Heavensward', link: 'r/hw/' },
+            // { label: 'Stormblood', link: 'r/sb/' },
+            // { label: 'Shadowbringers', link: 'r/shb/' },
+            // { label: 'Endwalker', link: 'r/ew/' },
+            // { label: 'Dawntrail', link: 'r/dt/' },
+            // { label: 'Evercold', link: 'r/ec/' },
           ],
         },
         {
           label: 'Trials',
           items: [
-            // { label: 'A Realm Reborn', link: 't/arr/landing' },
-            // { label: 'Heavensward', link: 't/hw/landing' },
-            // { label: 'Stormblood', link: 't/sb/landing' },
-            // { label: 'Shadowbringers', link: 't/shb/landing' },
-            { label: 'Endwalker', link: 't/ew/landing' },
-            { label: 'Dawntrail', link: 't/dt/landing' },
-            // { label: 'Evercold', link: 't/ec/landing' },
+            // { label: 'A Realm Reborn', link: 't/arr/' },
+            // { label: 'Heavensward', link: 't/hw/' },
+            // { label: 'Stormblood', link: 't/sb/' },
+            // { label: 'Shadowbringers', link: 't/shb/' },
+            { label: 'Endwalker', link: 't/ew/' },
+            { label: 'Dawntrail', link: 't/dt/' },
+            // { label: 'Evercold', link: 't/ec/' },
           ],
         },
         {
           label: 'XIV TLDR',
-          items: [{ label: 'Terminology', slug: 'about/terminology' }],
+          items: [{ label: 'Glossary', slug: 'about/glossary' }],
         },
       ],
     }),
