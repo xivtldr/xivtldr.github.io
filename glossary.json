@@ -59,7 +59,7 @@
     },
     "chandelier": {
       "term": "Chandelier",
-      "aliases": ["Shiva circles", "Chandelier"],
+      "aliases": ["Shiva circles", "Bombs"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "An attack pattern that covers the entire arena in multiple AoEs, which explode in the order they appeared. This is often solved by standing next to the first AoE and moving into it after it detonates.",
