@@ -3,9 +3,7 @@
   "terms": {
     "acceleration-bomb": {
       "term": "Acceleration Bomb",
-      "aliases": [
-        "Acceleration Bomb"
-      ],
+      "aliases": ["Acceleration Bomb"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "An attack which requires players to stop moving and attacking (including auto-attacks), often with a countdown or indicated by a debuff.",
@@ -13,10 +11,7 @@
     },
     "add": {
       "term": "Add",
-      "aliases": [
-        "Add",
-        "Adds"
-      ],
+      "aliases": ["Add", "Adds"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Additional enemies, often summoned by a boss. Some boss fights have add phases, where all adds need to be killed before the fight resumes.",
@@ -24,9 +19,7 @@
     },
     "akh-morn": {
       "term": "Akh Morn",
-      "aliases": [
-        "Akh Morn"
-      ],
+      "aliases": ["Akh Morn"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "AoE attack which hits multiple times and often requires the party to stack.",
@@ -34,9 +27,7 @@
     },
     "aoe": {
       "term": "Area of Eeffect",
-      "aliases": [
-        "Area of Eeffect"
-      ],
+      "aliases": ["Area of Eeffect"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "AoE. Damage can either hit everyone in vicinity, or anyone standing in areas marked by AoE patterns.",
@@ -44,10 +35,7 @@
     },
     "breath": {
       "term": "Breath",
-      "aliases": [
-        "Breath",
-        "Darkness"
-      ],
+      "aliases": ["Breath", "Darkness"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A damage type. Some buffs and debuffs can influence damage taken or given based on damage types. Only skills that can mitigate all damage can reduce Breath damage taken.",
@@ -55,9 +43,7 @@
     },
     "buff": {
       "term": "Buff",
-      "aliases": [
-        "Buff"
-      ],
+      "aliases": ["Buff"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Status with positive effects applied to a player character.",
@@ -65,10 +51,7 @@
     },
     "cardinal": {
       "term": "Cardinal",
-      "aliases": [
-        "Cardinal",
-        "Cardinals"
-      ],
+      "aliases": ["Cardinal", "Cardinals"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "The four main compass directions. N/E/S/W.",
@@ -76,9 +59,7 @@
     },
     "chandelier": {
       "term": "Chandelier",
-      "aliases": [
-        "Chandelier"
-      ],
+      "aliases": ["Shiva circles", "Chandelier"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "An attack pattern that covers the entire arena in multiple AoEs, which explode in the order they appeared. This is often solved by standing next to the first AoE and moving into it after it detonates.",
@@ -86,10 +67,7 @@
     },
     "charge": {
       "term": "Charge",
-      "aliases": [
-        "Charge",
-        "Dash"
-      ],
+      "aliases": ["Charge", "Dash"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "An attack that often has bosses charging through the arena, hitting everything in their path.",
@@ -97,10 +75,7 @@
     },
     "chariot": {
       "term": "Chariot",
-      "aliases": [
-        "Chariot",
-        "Out"
-      ],
+      "aliases": ["Chariot", "Out"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "AoE pattern shaped like a circle, centered on the boss. Usually requires getting to the edge or out of melee range.",
@@ -108,10 +83,7 @@
     },
     "cleave": {
       "term": "Cleave",
-      "aliases": [
-        "Cleave",
-        "cleave"
-      ],
+      "aliases": ["Cleave", "cleave"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Attack that hits multiple targets, often in an area directly in front of the boss.",
@@ -119,10 +91,7 @@
     },
     "conal": {
       "term": "Conal",
-      "aliases": [
-        "Conal",
-        "Cone"
-      ],
+      "aliases": ["Conal", "Cone"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A fan- or wedge-shaped area of attack, often originating from adds or players hit with a marker.",
@@ -130,10 +99,7 @@
     },
     "darkness": {
       "term": "Darkness",
-      "aliases": [
-        "Darkness",
-        "Breath"
-      ],
+      "aliases": ["Darkness", "Breath"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A damage type. Some buffs and debuffs can influence damage taken or given based on damage types. Only skills that can mitigate all damage can reduce Darkness damage taken.",
@@ -141,9 +107,7 @@
     },
     "debuff": {
       "term": "Debuff",
-      "aliases": [
-        "Debuff"
-      ],
+      "aliases": ["Debuff"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Status with negative effects applied to a player character. Debuffs with a blue, glowing bottom line can be removed by the healer skill Esuna.",
@@ -151,11 +115,7 @@
     },
     "donut": {
       "term": "Donut",
-      "aliases": [
-        "Donut",
-        "Dynamo",
-        "In"
-      ],
+      "aliases": ["Donut", "Dynamo", "In"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "AoE pattern shaped like a donut. The safe spot is usually directly in the boss hitbox, or far away.",
@@ -163,9 +123,7 @@
     },
     "doom": {
       "term": "Doom",
-      "aliases": [
-        "Doom"
-      ],
+      "aliases": ["Doom"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Debuff which instantly kills at the end of its duration. Often removed when a player reaches full health points or with the healer skill Esuna.",
@@ -173,10 +131,7 @@
     },
     "dorito": {
       "term": "Dorito",
-      "aliases": [
-        "Dorito",
-        "Kiss"
-      ],
+      "aliases": ["Dorito", "Kiss"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A mechanic that requires players to stand close to each other. Often indicated by a red dorito-shaped marker above players' heads. Usually standing close to a single other marked player is enough to resolve this mechanic.",
@@ -184,19 +139,23 @@
     },
     "down-for-the-count": {
       "term": "Down for the Count",
-      "aliases": [
-        "Down for the Count"
-      ],
+      "aliases": ["Down for the Count"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Debuff restricting all actions and interrupting any cast. Usually applied right before cutscenes or phase transitions.",
       "groupWith": null
     },
+    "earthshaker": {
+      "term": "Earthshaker",
+      "aliases": ["Earthshaker"],
+      "wikipedia": null,
+      "caseSensitive": true,
+      "definition": "Cone attacks targeted on party members, often with a specific marker above a player character.",
+      "groupWith": null
+    },
     "esuna": {
       "term": "Esuna",
-      "aliases": [
-        "Esuna"
-      ],
+      "aliases": ["Esuna"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Healer skill which can remove cleansable debuffs.",
@@ -204,20 +163,23 @@
     },
     "exaflare": {
       "term": "Exaflare",
-      "aliases": [
-        "Exaflare"
-      ],
+      "aliases": ["Exaflare"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Circles traveling in a direction indicated by arrows. Often explode one after another.",
       "groupWith": null
     },
+    "flare": {
+      "term": "Flare",
+      "aliases": ["flare"],
+      "wikipedia": null,
+      "caseSensitive": true,
+      "definition": "An attack that requires marked players to move away from the group, often to the edge or the corners of the arena.",
+      "groupWith": null
+    },
     "gaze": {
       "term": "Gaze",
-      "aliases": [
-        "Gaze",
-        "Staring Contest"
-      ],
+      "aliases": ["Gaze", "Staring Contest"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "An attack that requires the player model to face away from the source of the gaze attack. Often indicated by a red eye above an enemy's head.",
@@ -225,10 +187,7 @@
     },
     "half-width": {
       "term": "Half-Width",
-      "aliases": [
-        "Half-Width",
-        "Haircut"
-      ],
+      "aliases": ["Half-Width", "Haircut"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Half of the arena will be hit by an attack.",
@@ -236,10 +195,7 @@
     },
     "intercardinal": {
       "term": "Intercardinal",
-      "aliases": [
-        "Intercardinal",
-        "Intercardinals"
-      ],
+      "aliases": ["Intercardinal", "Intercardinals"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Four intermediate compass points located halfway between the main cardinal directions. NW/NE, SW/SE.",
@@ -247,10 +203,7 @@
     },
     "interrupt": {
       "term": "Interrupt",
-      "aliases": [
-        "Interrupt",
-        "Interruptible"
-      ],
+      "aliases": ["Interrupt", "Interruptible"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Orange, glowing cast bars can be interrupted to stop a cast from happening. Skills that can interrupt are Interject (Tanks), Head Graze (Phys Ranged DPS) as well as Flying Sardine and Bad Breath (Blue Mage).",
@@ -258,10 +211,7 @@
     },
     "invuln": {
       "term": "Invuln",
-      "aliases": [
-        "Invuln",
-        "Invulnerability"
-      ],
+      "aliases": ["Invuln", "Invulnerability"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Tank skill which negates all damage.",
@@ -269,10 +219,7 @@
     },
     "kiss": {
       "term": "Kiss",
-      "aliases": [
-        "Kiss",
-        "Dorito"
-      ],
+      "aliases": ["Kiss", "Dorito"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A mechanic that requires players to stand close to each other. Often indicated by a red dorito-shaped marker above players' heads. Usually standing close to a single other marked player is enough to resolve this mechanic.",
@@ -280,11 +227,7 @@
     },
     "knockback": {
       "term": "Knockback",
-      "aliases": [
-        "Knockback",
-        "Knockbacks",
-        "KB"
-      ],
+      "aliases": ["Knockback", "Knockbacks", "KB"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "An effect that physically moves the player character backwards. Often negated by skills providing knockback immunity (Arm's Length, Surecast). Opposite of Pull.",
@@ -292,11 +235,7 @@
     },
     "limit-break": {
       "term": "Limit Break",
-      "aliases": [
-        "Limit Break",
-        "LB",
-        "LB3"
-      ],
+      "aliases": ["Limit Break", "LB", "LB3"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A strong special attack that builds over the course of a duty. LB3's are fully charged limit breaks. Healers can revive entire parties to full health with it, while tanks sometimes require LB3 to block otherwise lethal damage.",
@@ -304,10 +243,7 @@
     },
     "line-stack": {
       "term": "Line Stack",
-      "aliases": [
-        "Line Stack",
-        "Wild Charge"
-      ],
+      "aliases": ["Line Stack", "Wild Charge"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A line stack marker. The first player in the line of attack usually takes the most damage, often requiring a tank.",
@@ -315,9 +251,7 @@
     },
     "magical": {
       "term": "Magical",
-      "aliases": [
-        "Magical"
-      ],
+      "aliases": ["Magical"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A damage type. Some buffs and debuffs can influence damage taken or given based on damage types.",
@@ -325,9 +259,7 @@
     },
     "meteor": {
       "term": "Meteor",
-      "aliases": [
-        "Meteor"
-      ],
+      "aliases": ["Meteor"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A hard-hitting attack which often requires breaking line-of-sight with the point of impact to survive.",
@@ -335,10 +267,7 @@
     },
     "mitigation": {
       "term": "Mitigation",
-      "aliases": [
-        "Mitigation",
-        "Mit"
-      ],
+      "aliases": ["Mitigation", "Mit"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Skills which reduce damage for either the player character or the whole party.",
@@ -346,9 +275,7 @@
     },
     "physical": {
       "term": "Physical",
-      "aliases": [
-        "Physical"
-      ],
+      "aliases": ["Physical"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A damage type. Some buffs and debuffs can influence damage taken or given based on damage types. Only physical damage can be parried.",
@@ -356,9 +283,7 @@
     },
     "plus": {
       "term": "Plus",
-      "aliases": [
-        "Plus"
-      ],
+      "aliases": ["Plus"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "AoE pattern which shoots out straight line AoEs in a plus shape.",
@@ -366,20 +291,15 @@
     },
     "protean": {
       "term": "Protean",
-      "aliases": [
-        "Protean"
-      ],
+      "aliases": ["Protean"],
       "wikipedia": null,
       "caseSensitive": true,
-      "definition": "AoE attack pattern targeting party members with cones, originating from the boss.",
+      "definition": "AoE attack pattern targeting party members with cones, originating from the boss. Usually requires the party to spread out into clock positions",
       "groupWith": null
     },
     "proximity-marker": {
       "term": "Proximity Marker",
-      "aliases": [
-        "Proximity Marker",
-        "proximity marker"
-      ],
+      "aliases": ["Proximity Marker", "proximity marker"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Attack which requires distance from the originating point to reduce the damage taken.",
@@ -387,9 +307,7 @@
     },
     "pyretic": {
       "term": "Pyretic",
-      "aliases": [
-        "Pyretic"
-      ],
+      "aliases": ["Pyretic"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Debuff which deals damage when inflicted players move or use any action.",
@@ -397,9 +315,7 @@
     },
     "pull": {
       "term": "Pull",
-      "aliases": [
-        "Pull"
-      ],
+      "aliases": ["Pull"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Attack which physically moves the player character towards a point in the arena. Opposite of Knockback.",
@@ -407,9 +323,7 @@
     },
     "repose": {
       "term": "Repose",
-      "aliases": [
-        "Repose"
-      ],
+      "aliases": ["Repose"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Healer skill which puts a target to sleep. Rarely used and enemies are often immune to it.",
@@ -417,9 +331,7 @@
     },
     "rescue": {
       "term": "Rescue",
-      "aliases": [
-        "Rescue"
-      ],
+      "aliases": ["Rescue"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Healer skill which pulls a targeted player towards the healer's position. Rarely used to save a player from being hit by an AoE attack.",
@@ -427,10 +339,7 @@
     },
     "raidwide": {
       "term": "Raidwide",
-      "aliases": [
-        "Raidwide",
-        "RW"
-      ],
+      "aliases": ["Raidwide", "RW"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Attack that hits the entire party, regardless of proximity to the source. Raidwides often require mitigation, and some can drop the HP of players to exactly 1.",
@@ -438,9 +347,7 @@
     },
     "spread": {
       "term": "Spread",
-      "aliases": [
-        "Spread"
-      ],
+      "aliases": ["Spread"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A mechanic that requires players to spread out. Often AoE circles dropping on feet of players after the cast ends.",
@@ -448,10 +355,7 @@
     },
     "stack": {
       "term": "Stack",
-      "aliases": [
-        "Stack",
-        "Stack Marker"
-      ],
+      "aliases": ["Stack", "Stack Marker"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "An attack pattern that hits proportionally to the amount of players in its area of effect. Damage is shared. Stack markers can hit multiple times, and are sometimes role-specific.",
@@ -459,10 +363,7 @@
     },
     "tankbuster": {
       "term": "Tankbuster",
-      "aliases": [
-        "Tankbuster",
-        "TB"
-      ],
+      "aliases": ["Tankbuster", "TB"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Hard-hitting attack targeting a tank, often indicated by a red circle.",
@@ -470,9 +371,7 @@
     },
     "towers": {
       "term": "Towers",
-      "aliases": [
-        "Towers"
-      ],
+      "aliases": ["Towers"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "A mechanic that requires a player to be present in a given area. Sometimes requires a specific amount of players or certain roles, indicated by visuals. If a tower is missed, the party usually suffers raid-wide damage.",
