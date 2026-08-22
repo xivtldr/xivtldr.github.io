@@ -337,7 +337,7 @@
       "definition": "Attack that hits the entire party, regardless of proximity to the source. Raidwides often require mitigation, and some can drop the HP of players to exactly 1.",
       "groupWith": null
     },
-    "shivacircles": {
+    "shiva-circles": {
       "term": "Shiva Circles",
       "aliases": ["Chandelier", "Sequential Circles"],
       "wikipedia": null,
