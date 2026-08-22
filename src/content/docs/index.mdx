@@ -1,40 +1,61 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: XIV TLDR
+description: 'No fluff, just the important parts: TLDR Guides for FFXIV'
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 'TLDR Guides for FFXIV: No fluff, just the important parts.'
   image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+    file: ../../assets/logo.png
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Search } from '@astrojs/starlight/components';
+import DutyCount from '../../components/DutyCount.astro';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## Next steps
+<span id="_top">
+  **Covering <DutyCount /> duties and counting.**
+</span>
+<br />
 
-<CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
+# Guides
+
+All the important mechanics, unique twists and surprises. TLDR guides can quickly be scanned while the boss is already casting!
+Quickly access the search with <kbd>Ctrl</kbd> + <kbd>K</kbd> / <kbd>Cmd</kbd> + <kbd>K</kbd>. Boss names are hidden to avoid spoilers.
+
+<br />
+<CardGrid>
+  <LinkCard title="Alliance Raids" href="/a" />
+  <LinkCard title="Raids" href="/#" />
+  <LinkCard title="Trials" href="/t" />
+  <LinkCard title="Dungeons" href="/#" />
+</CardGrid>
+
+<br />
+
+## XIV TLDR
+
+Learn about this site and how you can help to keep it up-to-date!
+
+<br />
+<CardGrid>
+  <Card title="FAQ" icon="question-circle">
+    [Frequently Asked Questions](#)
   </Card>
-  <Card title="Change page layout" icon="document">
-    Delete `template: splash` in `src/content/docs/index.mdx` to display a
-    sidebar on this page.
+  <Card title="Glossary" icon="document">
+    [Browse the glossary terms used on this site.](/glossary)
   </Card>
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  <Card title="Contribution Guide" icon="pen">
+    [Learn how to contribute and add new duties.](#)
   </Card>
-  <Card title="Configure your site" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
-  </Card>
-  <Card title="Read the docs" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  <Card title="GitHub Repo" icon="github">
+    [View source code on GitHub](https://github.com/xivtldr/xivtldr.github.io)
   </Card>
 </CardGrid>
+
+<Card title="Changelog" icon="code-branch">
+<br />
+- 2026-08-22: Added glossary
+
+- 2026-08-21: Migration to Astro Starlight
+
+</Card>

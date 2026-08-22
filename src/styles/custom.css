@@ -92,6 +92,7 @@
 
     }
 
+
     .content-panel:has(#_top)+.content-panel {
         padding-top: 0 !important;
     }
