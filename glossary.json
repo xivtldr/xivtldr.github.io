@@ -57,14 +57,6 @@
       "definition": "The four main compass directions. N/E/S/W.",
       "groupWith": null
     },
-    "chandelier": {
-      "term": "Chandelier",
-      "aliases": ["Shiva circles", "Bombs"],
-      "wikipedia": null,
-      "caseSensitive": true,
-      "definition": "An attack pattern that covers the entire arena in multiple AoEs, which explode in the order they appeared. This is often solved by standing next to the first AoE and moving into it after it detonates.",
-      "groupWith": null
-    },
     "charge": {
       "term": "Charge",
       "aliases": ["Charge", "Dash"],
@@ -147,7 +139,7 @@
     },
     "earthshaker": {
       "term": "Earthshaker",
-      "aliases": ["Earthshaker"],
+      "aliases": ["Earthshaker", "Earth Shaker"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Cone attacks targeted on party members, often with a specific marker above a player character.",
@@ -343,6 +335,14 @@
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "Attack that hits the entire party, regardless of proximity to the source. Raidwides often require mitigation, and some can drop the HP of players to exactly 1.",
+      "groupWith": null
+    },
+    "shivacircles": {
+      "term": "Shiva Circles",
+      "aliases": ["Chandelier", "Sequential Circles"],
+      "wikipedia": null,
+      "caseSensitive": true,
+      "definition": "An attack pattern that covers the entire arena in multiple AoEs, which explode in the order they appeared. This is often solved by standing in the last ApE to appear, next to the first AoE and moving into it after it detonates.",
       "groupWith": null
     },
     "spread": {
