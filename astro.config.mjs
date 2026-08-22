@@ -128,7 +128,7 @@ export default defineConfig({
             // { label: 'A Realm Reborn', link: 't/arr/' },
             // { label: 'Heavensward', link: 't/hw/' },
             // { label: 'Stormblood', link: 't/sb/' },
-            // { label: 'Shadowbringers', link: 't/shb/' },
+            { label: 'Shadowbringers', link: 't/shb/' },
             { label: 'Endwalker', link: 't/ew/' },
             { label: 'Dawntrail', link: 't/dt/' },
             // { label: 'Evercold', link: 't/ec/' },
