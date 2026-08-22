@@ -43,7 +43,7 @@ export default defineConfig({
         },
       ],
       editLink: {
-        baseUrl: 'https://github.com/xivtldr/xivtldr.github.io/edit/main/docs/',
+        baseUrl: 'https://github.com/xivtldr/xivtldr.github.io/edit/main/',
       },
       defaultLocale: 'root',
       locales: {
