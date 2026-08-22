@@ -20,7 +20,7 @@ function roleBlock(role) {
 // https://astro.build/config
 
 export default defineConfig({
-  site: 'https://xivtldr.github.io/',
+  site: 'https://xivtldr.com/',
   markdown: {
     processor: unified(),
   },
