@@ -1,0 +1,19 @@
+diff --git a/node_modules/starlight-glossary/src/routes/glossary.astro b/node_modules/starlight-glossary/src/routes/glossary.astro
+index 93553e9..1dcbf5e 100644
+--- a/node_modules/starlight-glossary/src/routes/glossary.astro
++++ b/node_modules/starlight-glossary/src/routes/glossary.astro
+@@ -54,12 +54,11 @@ const headings = sections.map((s) => ({
+ ---
+ 
+ <StarlightPage
+-  frontmatter={{ title: "Glossary", description: "Technical glossary" }}
++  frontmatter={{ title: "Glossary", description: "Glossary of common mechanics and short-hands" }}
+   headings={headings}
+ >
+   <p>
+-    Every term referenced across the documentation, with a short definition
+-    and a link to further reading on Wikipedia when available.
++    XIV TLDR often uses abbreviations or simplified terminology to denote recurring attack patterns, marked by a <u>flair</u>. These are described on this page.
+   </p>
+ 
+   <nav class="sl-glossary-jump" aria-label="Jump to letter">
