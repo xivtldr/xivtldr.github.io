@@ -2,7 +2,31 @@
 
 @layer my-reset, starlight, black, my-overrides;
 
+
 @layer my-overrides {
+
+    /* Show title and search on mobile */
+    site-search {
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+
+    black-menu-button {
+        order: -1;
+    }
+
+    black-menu-button .label {
+        display: none;
+    }
+
+    /* Hide title on small screens */
+    @media (min-width: 26rem) {
+        .site-title {
+            display: flex;
+        }
+    }
 
     @media (min-width: 768px) {
         .content-panel {
@@ -106,5 +130,9 @@
         border-radius: 2px;
         display: inline-block;
         margin: 0 0.1em;
+    }
+
+    .site-title {
+        display: flex;
     }
 }
