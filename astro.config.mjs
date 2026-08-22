@@ -136,7 +136,7 @@ export default defineConfig({
         },
         {
           label: 'XIV TLDR',
-          items: [{ label: 'Glossary', slug: 'about/glossary' }],
+          items: [{ label: 'Glossary', link: './glossary' }],
         },
       ],
     }),
