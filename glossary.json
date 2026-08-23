@@ -163,7 +163,7 @@
     },
     "flare": {
       "term": "Flare",
-      "aliases": ["flare"],
+      "aliases": ["Flare", "flare"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "An attack that requires marked players to move away from the group, often to the edge or the corners of the arena.",
@@ -230,7 +230,7 @@
       "aliases": ["Limit Break", "LB", "LB3"],
       "wikipedia": null,
       "caseSensitive": true,
-      "definition": "A strong special attack that builds over the course of a duty. LB3's are fully charged limit breaks. Healers can revive entire parties to full health with it, while tanks sometimes require LB3 to block otherwise lethal damage.",
+      "definition": "A strong special attack that builds over the course of a duty. LB3's are fully charged limit breaks. Healers can revive entire parties to full health with it, while tanks sometimes require LB3 to block otherwise lethal damage for the party.",
       "groupWith": null
     },
     "line-stack": {
@@ -339,7 +339,7 @@
     },
     "shiva-circles": {
       "term": "Shiva Circles",
-      "aliases": ["Chandelier", "Sequential Circles"],
+      "aliases": ["Shiva Circles", "Chandelier", "Sequential Circles"],
       "wikipedia": null,
       "caseSensitive": true,
       "definition": "An attack pattern that covers the entire arena in multiple AoEs, which explode in the order they appeared. This is often solved by standing in the last AoE to appear, next to the first AoE, and moving into it after it detonates.",
