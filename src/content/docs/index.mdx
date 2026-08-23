@@ -8,34 +8,72 @@ hero:
     file: ../../assets/logo.png
 ---
 
+import { LinkButton } from '@astrojs/starlight/components';
 import DutyCount from '../../components/DutyCount.astro';
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-<span id="_top">
-  **Covering <DutyCount /> duties and counting.**
-</span>
 <br />
 
-# Guides
-
-All the important mechanics, and nothing more. TLDR guides for Sprouts, Returners and vets who _"haven't seen this duty in ages"._
+<span id="_top">
+  **Guides ⋅ Covering <DutyCount /> duties and counting.**
+</span>
+<br />
+All the important mechanics, and nothing more. TLDR guides for Sprouts,
+Returners and vets who _"haven't seen this duty in ages"._
 
 Access the search with <kbd>Ctrl</kbd> + <kbd>K</kbd> / <kbd>Cmd</kbd> + <kbd>K</kbd> or browse by content-type.
 Boss names are hidden to avoid spoilers.
 
 <br />
 <CardGrid>
-  <LinkCard title="Alliance Raids" href="/a" />
-  <LinkCard title="Raids" href="/#" />
-  <LinkCard title="Trials" href="/t" />
-  <LinkCard title="Dungeons" href="/#" />
+  <Card title="">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <img src="assets/icons/raids.png" alt="" width="24" height="24" />
+      <a href="/a/">View all **Alliance Raid** guides</a>
+    </div>
+  </Card>
+  <Card title="">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <img src="assets/icons/raids.png" alt="" width="24" height="24" />
+      <a href="/#">View all **Raid** guides</a>
+    </div>
+  </Card>
+  <Card title="">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <img src="assets/icons/trials.png" alt="" width="24" height="24" />
+      <a href="/t/">View all **Trial** guides</a>
+    </div>
+  </Card>
+  <Card title="">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <img src="assets/icons/dungeons.png" alt="" width="24" height="24" />
+      <a href="/#">View all **Dungeon** guides</a>
+    </div>
+  </Card>
 </CardGrid>
+<br />
+<Card title="Patch 7.55 Trail to the Heavens ⋅ Launched July 28, 2026">
+  <img src="assets/banners/dawntrail_banner.png" />
+  <br />
 
+<div style="text-align: center">
+  Patch Overview:
+  [ffxiv.consolegameswiki.com](https://ffxiv.consolegameswiki.com/wiki/FF14_Wiki)
+  <br />
+  <LinkButton href="/a/dt">Alliance Raid Series</LinkButton>
+  <LinkButton href="/r/dt">Raid Series</LinkButton>
+  <LinkButton href="/t/dt">Trials</LinkButton>
+  <LinkButton href="/d/dt">Dungeons</LinkButton>
+</div>
+
+</Card>
 <br />
 
-# XIV TLDR
-
-Learn about this site and how you can help to keep it up-to-date!
+<span id="_top">
+  **XIV TLDR ⋅ Learn about this site and how you can help to keep it
+  up-to-date!**
+</span>
+#
 
 <br />
 <CardGrid>
@@ -61,4 +99,17 @@ Learn about this site and how you can help to keep it up-to-date!
 
 - 2026-08-21 [`a825e16`](https://github.com/xivtldr/xivtldr.github.io/commit/a825e16461422032f03dee1e480af6f0ad6781a4): Migration to Astro Starlight
 
+</Card>
+___
+<Card title="Legal" icon="information">
+  <br />
+  This website does not collect, store, or process any personal data. For more
+  information, read our full [privacy statement here](/privacy). <br />
+  <br /> FINAL FANTASY, FINAL FANTASY XIV, and all related logos, names, and
+  imagery are trademarks of Square Enix Holdings Co., Ltd. This is an
+  unofficial, non-commercial fan project created under Square Enix's fan content
+  guidelines and is not affiliated with, endorsed, or sponsored by Square Enix.
+  <br />
+  
+  This website and accompanying code are [licensed under MIT (Code) and CC BY-SA 4.0 (Guide content)](https://github.com/xivtldr/xivtldr.github.io/blob/main/LICENSE).
 </Card>

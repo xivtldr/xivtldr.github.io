@@ -15,6 +15,7 @@
     "@astrojs/starlight": "^0.41.7",
     "astro": "^7.1.6",
     "sharp": "^0.35.3",
+    "starlight-announcement": "^1.1.0",
     "starlight-glossary": "github:Wave-RF/starlight-glossary",
     "starlight-markdown-blocks": "^0.1.1",
     "starlight-theme-black": "^0.7.1"

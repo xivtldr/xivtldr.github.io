@@ -6,6 +6,7 @@ import { unified } from '@astrojs/markdown-remark';
 import starlightMarkdownBlocks from 'starlight-markdown-blocks';
 import starlightThemeBlack from 'starlight-theme-black';
 import starlightGlossary from 'starlight-glossary';
+import starlightAnnouncement from 'starlight-announcement';
 
 // Role shoutouts
 function roleBlock(role) {
@@ -95,6 +96,17 @@ export default defineConfig({
           discovery: {
             enabled: false,
           },
+        }),
+        starlightAnnouncement({
+          announcements: [
+            {
+              id: 'work-in-progress-aug2026',
+              content:
+                "WIP: Some links may not work and past duties are actively added every day. Check back later if something's missing and keep an eye on the changelog at the bottom of this page.",
+              variant: 'note',
+              showOn: ['/'],
+            },
+          ],
         }),
       ],
       sidebar: [
