@@ -143,7 +143,7 @@ export default defineConfig({
             { label: 'Shadowbringers', link: 't/shb/' },
             { label: 'Stormblood', link: 't/sb/' },
             { label: 'Heavensward', link: 't/hw/' },
-            // { label: 'A Realm Reborn', link: 't/arr/' },
+            { label: 'A Realm Reborn', link: 't/arr/' },
           ],
         },
         {
