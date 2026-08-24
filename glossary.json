@@ -177,8 +177,8 @@
       "definition": "An attack that requires the player model to face away from the source of the gaze attack. Often indicated by a red eye above an enemy's head.",
       "groupWith": null
     },
-    "half-width": {
-      "term": "Half-Width",
+    "half-room": {
+      "term": "Half-Room",
       "aliases": ["Half-Width", "Haircut"],
       "wikipedia": null,
       "caseSensitive": true,

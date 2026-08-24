@@ -1,49 +1,16 @@
-# Starlight Starter Kit: Basics
+# XIV TLDR - Quick Duty Guides for Final Fantasy XIV
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-npm create astro@latest -- --template starlight
-```
+## None of the fluff, just the important parts
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+TLDR guides are straight to the point - you don't need instructions on how to handle a Stack Marker. But you might want to know when that Stack Marker has a surprise twist only used in this one obscure duty you haven't run in years.
 
-## 🚀 Project Structure
+This site is meant to be a companion for your duty roulette - read it as the boss is already casting. If you are new to the game, you might appreciate these guides as short primers that don't spoil the visual spectacle of a story fight. 
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+Most casual content doesn't need a guide, and making mistakes in Normal content will never get you chewed out by other players. But if you're the type of player who doesn't like being unprepared, this site will hopefully be what you're looking for! 
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+Due to the nature of the format, XIV TLDR is focused on casual content only. 
+For high-end content, check out the excellent [wtfdig](https://wtfdig.info/).
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
-
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
-
-Static assets, like favicons, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+I'm still working on adding all duties. Check back later if something's missing! Feel free to file an issue for any typos, wrong info or other problems encountered with this site. 
