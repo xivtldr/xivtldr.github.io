@@ -33,6 +33,7 @@ export default defineConfig({
 
       logo: {
         src: './src/assets/logo.png',
+        alt: 'XIVTLDR.com homepage',
       },
       favicon: '/favicon.png',
       customCss: ['./src/styles/custom.css'],
