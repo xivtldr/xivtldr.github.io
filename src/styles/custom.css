@@ -61,6 +61,15 @@
         margin-bottom: 1rem;
     }
 
+    .sl-markdown-content h2 {
+        font-size: 1.2rem;
+        /* Adjust to your preferred size (2.5rem = 40px) */
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
     .sl-markdown-content :is(strong, b) {
         font-weight: 600 !important;
         /* Adjust this number to change boldness */
