@@ -127,7 +127,7 @@ export default defineConfig({
           label: 'Raids',
           items: [
             // { label: 'Evercold', link: 'r/ec/' },
-            // { label: 'Dawntrail', link: 'r/dt/' },
+            { label: 'Dawntrail', link: 'r/dt/' },
             // { label: 'Endwalker', link: 'r/ew/' },
             // { label: 'Shadowbringers', link: 'r/shb/' },
             // { label: 'Stormblood', link: 'r/sb/' },
