@@ -147,6 +147,18 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Dungeons',
+          items: [
+            // { label: 'Evercold', link: 'd/ec/' },
+            { label: 'Dawntrail', link: 'd/dt/' },
+            // { label: 'Endwalker', link: 'd/ew/' },
+            // { label: 'Shadowbringers', link: 'd/shb/' },
+            // { label: 'Stormblood', link: 'd/sb/' },
+            // { label: 'Heavensward', link: 'd/hw/' },
+            // { label: 'A Realm Reborn', link: 'd/arr/' },
+          ],
+        },
+        {
           label: 'XIV TLDR',
           items: [{ label: 'Glossary', link: './glossary' }],
         },

@@ -1,0 +1,115 @@
+---
+// DutyPagination.astro
+//
+// Manual replacement for Starlight's auto-generated Prev/Next footer,
+// for use on duty pages (e.g. /a/shb/1) which aren't sidebar nodes and
+// therefore never get pagination context from Starlight itself.
+//
+// Usage (from a duty .md/.mdx file):
+//   import DutyPagination from '../../../components/DutyPagination.astro';
+//   ...
+//   <DutyPagination />
+//
+
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Icons live in public/assets/icons/ so they're referenced by plain URL
+const ICONS_DIR = path.join(process.cwd(), 'public', 'assets', 'icons');
+
+// Returns the icon's public URL, or undefined if the file doesn't exist
+// yet (e.g. a newly-added expansion without artwork), so the template
+// can skip rendering an <img> instead of showing a broken image.
+function iconUrl(filename: string): string | undefined {
+  if (!filename) return undefined;
+  const exists = fs.existsSync(path.join(ICONS_DIR, `${filename}.png`));
+  return exists ? `/assets/icons/${filename}.png` : undefined;
+}
+
+// ADD NEW EXPANSIONS HERE when they release:
+const EXPANSIONS: Record<string, { label: string; icon: string }> = {
+  arr: { label: 'A Realm Reborn', icon: 'arr' },
+  hw: { label: 'Heavensward', icon: 'heavensward' },
+  sb: { label: 'Stormblood', icon: 'stormblood' },
+  shb: { label: 'Shadowbringers', icon: 'shadowbringers' },
+  ew: { label: 'Endwalker', icon: 'endwalker' },
+  dt: { label: 'Dawntrail', icon: 'dawntrail' },
+  ec: { label: 'Evercold', icon: 'ec' }, // no icon yet
+  // next-expansion-shorthand: { label: 'Next Expansion Display Name', icon: 'filename' },
+};
+
+const DUTY_TYPES: Record<string, { label: string; icon: string }> = {
+  t: { label: 'Trials', icon: 'trials' },
+  a: { label: 'Alliance Raids', icon: 'raids' },
+  r: { label: 'Raids', icon: 'raids' },
+  d: { label: 'Dungeons', icon: 'dungeons' },
+};
+
+// URL shape is always /{type}/{expansion}/{duty-slug}
+const segments = Astro.url.pathname.split('/').filter(Boolean);
+const [type, expansion] = segments;
+
+const dutyType = DUTY_TYPES[type] ?? { label: type, icon: '' };
+const expansionInfo = EXPANSIONS[expansion] ?? { label: expansion, icon: '' };
+
+const prevHref = `/${type}/${expansion}/`;
+const prevLabel = `All ${expansionInfo.label} ${dutyType.label}`;
+const prevIcon = iconUrl(expansionInfo.icon);
+
+const nextHref = `/${type}/`;
+const nextLabel = `All ${dutyType.label}`;
+const nextIcon = iconUrl(dutyType.icon);
+---
+
+<div class="pagination-links print:hidden">
+  <a class="prev" href={prevHref} rel="prev">
+    {prevIcon && <img src={prevIcon} alt="" width="28" height="28" />}
+    <span class="link-title">{prevLabel}</span>
+  </a>
+  <a class="next" href={nextHref} rel="next">
+    <span class="link-title">{nextLabel}</span>
+    {nextIcon && <img src={nextIcon} alt="" width="28" height="28" />}
+  </a>
+</div>
+
+<style>
+  .pagination-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .pagination-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--sl-color-white);
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    line-height: var(--sl-line-height-headings);
+  }
+  .pagination-links a:hover {
+    border-color: var(--sl-color-gray-2);
+  }
+  .pagination-links a img {
+    flex-shrink: 0;
+    border-radius: 0.25rem;
+  }
+  .link-title {
+    font-size: var(--sl-text-base);
+    font-weight: 600;
+  }
+  .pagination-links .next {
+    margin-inline-start: auto;
+    text-align: end;
+    justify-content: flex-end;
+  }
+  @media (min-width: 50rem) {
+    .pagination-links a {
+      width: calc(50% - 0.5rem);
+    }
+  }
+</style>
