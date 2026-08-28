@@ -475,7 +475,8 @@
       "term": "Stack",
       "aliases": [
         "Stack",
-        "Stack Marker"
+        "Stack Marker",
+        "Stack Markers"
       ],
       "wikipedia": null,
       "caseSensitive": true,
