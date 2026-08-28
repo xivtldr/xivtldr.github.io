@@ -1,0 +1,69 @@
+---
+title: Origenics
+hero:
+  tagline: 'Dawntrail MSQ Dungeon (Lvl. 99)'
+description: "TLDR Guide for FFXIV's Origenics (Herpekaris, Deceiver, Ambrose the Undeparted) - Dawntrail 7.0 Level 99 Dungeon"
+tags:
+  - dungeon
+  - leveling
+  - dawntrail
+  - lvl99
+  - '7.0'
+tableOfContents: false
+---
+
+import DutyPagination from '../../../../components/DutyPagination.astro';
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<div data-pagefind-ignore>
+
+<Tabs>
+  <TabItem label="Herpekaris">
+    :::tank
+      **TB**: Convulsive Crush
+    :::
+    :::healer 
+      **RW**: Strident Shriek
+    :::
+
+    - **Vasoconstrictor / Venomspill**: Multiple Circle AoE's on side of raised arm. Repeats.
+      - Stand in center, behind boss, and immediately move to opposite side of raised arm. Immediately move back to middle once Circles go off.
+      - Area that will be hit is slightly larger than expected.
+    - **Writhing Riot**: Three sequential Conals: One 90° behind, two 210° left and right. Random order.
+      - Stand close to boss in line with target circle arrow on one side
+      - Move to opposite once side AoE went off
+
+  </TabItem>
+
+  <TabItem label="Deceiver">
+    :::healer
+      **RW**: Electrowave
+
+      _Upcoming trash after this boss: **Hard Stomp** (Turtle) can be interrupted with _Repose_._
+    :::
+
+    - **Bionic Thrash**: Hourglass AoE. 2 Squares indicated by arms will explode
+    - **Initialize Androids/Turrets**: Stand in line with glitching android/turret
+      - **Surge**: Aim for non-glitched turret
+
+  </TabItem>
+  <TabItem label="Innovation's Excess: Ambrose the Undeparted">
+    :::tank
+      **TB**: Voltaic Slash
+    :::
+    :::healer
+      **RW**: Psychic Wave
+    :::
+ 
+    - **Overwhelming Charge**: Half-Room in front
+    - **Psychokinesis**: Avoid line of glowing cages
+    - **Extrasensory Field**: Don't get pushed into wall
+      - Combines with **Overwhelming Charge** - land behind boss
+    - **Psychokinesis**: Lance will dash into direction of disappearing red lines
+      - Stand next to boss, in-between where two lines bounce off the walls
+      - Line AoE's are slightly larger than expected, but melee can safely retain uptime
+  </TabItem>
+</Tabs>
+</div>
+<DutyPagination />

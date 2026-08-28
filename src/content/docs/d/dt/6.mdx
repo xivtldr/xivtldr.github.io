@@ -1,0 +1,74 @@
+---
+title: Alexandria
+hero:
+  tagline: 'Dawntrail MSQ Dungeon (Lvl. 100)'
+description: "TLDR Guide for FFXIV's Alexandria (Antivirus X, Amalgam, Eliminator) - Dawntrail 7.0 Level 100 Dungeon"
+tags:
+  - dungeon
+  - level-cap
+  - dawntrail
+  - lvl100
+  - '7.0'
+tableOfContents: false
+---
+
+import DutyPagination from '../../../../components/DutyPagination.astro';
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<div data-pagefind-ignore>
+
+<Tabs>
+  <TabItem label="Antivirus X">
+    :::tank
+      **TB**: Quarantine/Disinfection
+    :::
+    :::healer
+      **RW**:  Cytolysis
+    :::
+
+    - **Immune Response**: Wide Conal
+      - Next cast will hit back of boss instead
+    - **Foreign entity removal initiated**
+      - Each circle will either explode into a Plus, or turn into Donut
+      - These mechanics resolve quickly back-to-back. Pre-move as AoE's go off.
+      - Mind combination with **Immune Response** (front or back)! Two in later casts.
+      - Last **Immune Response** will always resolve _after_ the last circle goes off
+
+  </TabItem>
+
+  <TabItem label="Amalgam">
+    :::tank
+      **TB**: Amalgamight
+    :::
+    :::healer
+      **RW**: Electrowave
+    :::
+
+    - **Disassembly**: Half-Room in triangle shape, indicated by electric tethers
+      - Later combines with Line AoE and Spread
+    - **Centralized Current / Split Current**:  Sides / Center are safe
+    - **Ternary Charge**: Out into Donut
+
+  </TabItem>
+    <TabItem label="Bleeding-edge Technology: Eliminator">
+    :::tank
+      **TB**: 
+    :::
+    :::healer
+      **RW**: Disruption, Holo Ark, Elimination
+    :::
+
+    - **Partition / Reconfigured Partition**: Half-Room on side of sword. Repeats.
+    - **Subroutine**: Combines with **Partition / R. Partition**
+      - Claw: Line AoE
+      - Drone: Donut
+      - 6 Glowing Towers: Kill asap. Mind possible Donut, Line AoE, Stack Marker Combo.
+      - Blue Circle: Knockback. Mind **Partition / R. Partition**!
+    - **Elimination**: Glowing lines will explode in order of appearance
+      - Every **Subroutine** after will have Claw fire through Donut. Donut will always go off first.
+
+  </TabItem>
+</Tabs>
+</div>
+<DutyPagination />

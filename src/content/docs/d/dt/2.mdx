@@ -1,0 +1,63 @@
+---
+title: Worqor Zormor
+hero:
+  tagline: 'Dawntrail MSQ Dungeon (Lvl. 93)'
+description: "TLDR Guide for FFXIV's Worqor Zormor (Ryoqor Terteh, Kahderyor, Gurfurlur) - Dawntrail 7.0 Level 93 Dungeon"
+tags:
+  - dungeon
+  - leveling
+  - dawntrail
+  - lvl93
+  - '7.0'
+tableOfContents: false
+---
+
+import DutyPagination from '../../../../components/DutyPagination.astro';
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<div data-pagefind-ignore>
+
+<Tabs>
+  <TabItem label="Ryoqor Terteh">
+    :::healer
+      **RW**: Frosting Fracas
+    :::
+
+    - **Fluffle Up / Cold Feet**: Move into safe-zones once AoE goes off
+      - 1st cast: Stand in front of tethered add
+      - 2nd cast: Stand in overlap of tethered adds
+      - 3rd cast: Stand in-between overlap of circles, in front of tethered adds
+
+  </TabItem>
+
+  <TabItem label="Kahderyor">
+    :::healer 
+      **RW**: <mark>L</mark> Wind Unbound
+    :::
+
+    - Tower Stack Marker turns into Donut or Out
+    - Crystal narrow lines are safe-zones, unless they glow yellow
+    - Destroy own Crystal Jail. Will kill if not freed after 21s.
+    - **Sharpened Sights**: Gaze will be combined with Out and Donut
+
+  </TabItem>
+    <TabItem label="Dawn's Elector: Gurfurlur">
+    :::healer
+      **RW**: Heaving Haymaker, Enduring Glory (scales with missed orbs)
+    :::
+
+    Outer wall hurts quite a bit, avoid getting knocked into it.
+
+    - **Stonework**
+      - Water: Knockback from side of square AoE
+      - Fire: Sequential AoE. Stand next to first AoE, then move into it once it goes off
+      - Water and Fire will later combine
+      - Wind: Knockback, four tornadoes
+    - **Arcane Stomp**: Intercept orbs, each grants damage/healing up
+      - **Enduring Glory** can wipe party if enough orbs reached boss
+
+  </TabItem>
+</Tabs>
+</div>
+<DutyPagination />
