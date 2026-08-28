@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 
-const DUTY_PREFIXES = ['a/', 't/', 'r/'];
+const DUTY_PREFIXES = ['a/', 't/', 'r/', 'd/'];
 
 const dutyDocs = await getCollection('docs', (entry) => {
   const inDutyFolder = DUTY_PREFIXES.some((prefix) => entry.id.startsWith(prefix));
