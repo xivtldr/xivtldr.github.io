@@ -36,6 +36,16 @@ export default defineConfig({
         alt: 'XIVTLDR.com homepage',
       },
       favicon: '/favicon.png',
+      head: [
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'apple-touch-icon',
+            sizes: '180x180',
+            href: '/apple-touch-icon.png',
+          },
+        },
+      ],
       customCss: ['./src/styles/custom.css'],
       social: [
         {
