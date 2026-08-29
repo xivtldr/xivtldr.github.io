@@ -1,0 +1,79 @@
+---
+title: The Strayborough Deadwalk
+hero:
+  tagline: 'Dawntrail Level Cap Dungeon (Patch 7.0)'
+description: "TLDR Guide for FFXIV's The Strayborough Deadwalk (Leonogg I, Jack-in-the-Pot, Träumerei) - Dawntrail 7.0 Level 100 Dungeon"
+tags:
+  - dungeon
+  - level-cap
+  - dawntrail
+  - lvl100
+  - '7.0'
+tableOfContents: false
+---
+
+import DutyPagination from '../../../../components/DutyPagination.astro';
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+import { Image } from 'astro:assets';
+import teacups from '../../../../assets/content/d/dt/8_teacups.webp';
+
+<div data-pagefind-ignore>
+
+<Tabs>
+  <TabItem label="His Royal Headness Leonogg I">
+    :::healer
+      **RW**: Malicious Mist:
+    :::
+
+    - **Team Spirit / Spirited Charge**
+      - Dolls target furthest player(s), then the closest after hitting a wall. Two will always run straight to center of arena.
+      - Move slightly earlier to avoid ping-related shenanigans
+      - **Evil Scheme**: Two Sets of 4 Exaflares. Wait for the first set to go off twice, move into spawn location of first set
+      - **Scream**: Three sets of sequential Conal AoE's
+
+  </TabItem>
+
+  <TabItem label="Jack-in-the-Pot">
+    :::tank
+      **TB**: Last Drop
+    :::
+    :::healer
+      **RW**: Sordid Steam
+    :::
+
+    - **Toiling Teapots**: Expanding Circle AoE, multiple sets
+
+    ## Troubling Teacups / Tea Awhirl
+
+    Possessed teacups explode in a very large circle AoE.
+
+    - **1 Ghost**: Stand where ghost first spawns
+
+    From here on out, identify the second ghost's relative spawn position to the first and move into these safe-zones:
+    - **Opposite**: One Intercardinal direction clockwise, Pink area
+    - **Adjacent**: One Cardinal direction clockwise from both cups (e.g. West/North: Move East)
+
+    Reference image:
+
+    <Image src={teacups} alt="Six diagrams, made by Reddit user u/Sovis showing Jack-in-the-Pot positioning options: go to the ghost's old spot, hug the cup at ~45° clockwise from the ghost or most-clockwise ghost, go opposite the ghosts' original spot, or hug the edge cup or furthest ghost, each showing the resulting safe zone from overlapping AoEs"/>
+
+    _Source: <a href="https://www.reddit.com/r/ffxiv/comments/1dv05hi/lv100_ghost_dungeon_2nd_boss_guide">u/Sovis (reddit.com)</a>_
+
+  </TabItem>
+    <TabItem label="Daylit Nightmare: Träumerei">
+    :::healer
+      **RW**: Malicious Mist (DoT)
+    :::
+    :::all
+    Four ghost panels will occasionally light up. Step on them to turn into a ghost, or back into your normal form.
+    :::
+    - **Poltergeist**: Turn into ghost, stretch tether
+    - **Ghostduster**: Turn back to normal
+    - **Fleshbuster**: Turn into ghost
+
+  </TabItem>
+</Tabs>
+<DutyPagination />
+</div>

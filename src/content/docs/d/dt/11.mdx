@@ -1,0 +1,87 @@
+---
+title: The Meso Terminal
+hero:
+  tagline: 'Dawntrail Level Cap Dungeon (Patch 7.3)'
+description: "TLDR Guide for FFXIV's The Meso Terminal (Chirurgeon General, Hooded Headsmen, The Immortal Remains) - Dawntrail 7.3 Level 100 Dungeon"
+tags:
+  - dungeon
+  - level-cap
+  - dawntrail
+  - lvl100
+  - '7.3'
+tableOfContents: false
+---
+
+import DutyPagination from '../../../../components/DutyPagination.astro';
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<div data-pagefind-ignore>
+
+<Tabs>
+  <TabItem label="Chirurgeon General">
+    :::tank
+      **TB**: Concentrated Dose
+    :::
+    :::healer
+      **RW**: Medicine Field, Sensory Deprivation
+
+      **Esuna**: Concentrated Dose (TB, DoT)
+    :::
+
+    - _Liquid chemical dispensers whir into action.._: Knockback resolves first. Position toward medium-sized Circles
+      - Followed by **Biochemical Front**: Half-Room
+      - 2nd cast: Memorize original Knockback and safe-spots. AoE's resolve first.
+      - Every cast after: AoE with countdown will resolve first
+    - _Your senses are dulled, preventing you from predicting attacks..._: Only the first Knockback will go off
+
+  </TabItem>
+
+  <TabItem label="Hooded Headsmen">
+    :::tank
+      **TB**: Will Breaker
+    :::
+    :::healer
+      **RW**: Head-splitting Roar
+
+      **Doom** (Esuna): Death Penalty
+    :::
+
+    - Debuffs depending on role: Yellow (Tank), Red (Healer), Purple/Blue (DPS)
+      - Only Headsman with corresponding buff can be damaged
+
+    ## Rings
+    Don't try to escape ring.
+    - Sequential Line AoE's, dodge Electric Knifes with Donut/Out, Three large Circle AoE's
+    - **Serial Torture**: Combines previous mechanics
+    - Role-specific
+      - Tank: Interrupt **Will Breaker** (Phys Vuln Up). TB follows.
+      - Healer: **Death Penalty** (Doom (10s), Esuna)
+      - DPS: Soft-enrage. DoT will increase until Hellmaker is killed.
+
+  </TabItem>
+    <TabItem label="Memory Meld: The Immortal Remains">
+    :::tank
+      **TB**: Memory of the Pyre
+    :::
+    :::healer
+      **RW**: Recollection
+
+    :::
+
+    ## Memento / Memories
+
+    - ___Memories of the slain are made manifest...___
+      - Two sets of Line AoE's exploding along the tethers. Stand on untethered shade, then move into tethered shade once it explodes.
+    - **_Memories of an enemy bombardment are made manifest..._**
+      - Move far away from groups, stand clear of single shades
+      - Later combines with Knockback
+    - **_Memories of war casualties are made manifest..._**
+      - Move to corner opposite of diagonally running shades. Huge Line AoE's in direction of running shades.
+      - Melee: Triangle on the floor at center edge has safe-zone. Stand to the left or right of top-half depending on diagonally running shades.
+      - Followed by tethered Line AoE's.
+
+  </TabItem>
+</Tabs>
+<DutyPagination />
+</div>
