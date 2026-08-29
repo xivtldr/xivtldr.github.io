@@ -13,6 +13,12 @@ import { LinkButton } from '@astrojs/starlight/components';
 import DutyCount from '../../components/DutyCount.astro';
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
+import { Image } from 'astro:assets';
+import currentExpansionBanner from '../../assets/banners/dawntrail_banner.png';
+import iconRaid from '../../assets/icons/raids.png';
+import iconTrial from '../../assets/icons/trials.png';
+import iconDungeon from '../../assets/icons/dungeons.png';
+
 <br />
 
 <span id="_top">
@@ -22,32 +28,37 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 <CardGrid>
   <Card title="">
     <div style="display: flex; align-items: center; gap: 0.75rem;">
-      <img src="assets/icons/raids.png" alt="" width="24" height="24" />
+      <Image src={iconRaid} alt="" width="24" height="24" loading="eager" />
       <a href="/a/">View all **Alliance Raid** guides</a>
     </div>
   </Card>
   <Card title="">
     <div style="display: flex; align-items: center; gap: 0.75rem;">
-      <img src="assets/icons/raids.png" alt="" width="24" height="24" />
+      <Image src={iconRaid} alt="" width="24" height="24" loading="eager" />
       <a href="/r/">View all **Raid** guides</a>
     </div>
   </Card>
   <Card title="">
     <div style="display: flex; align-items: center; gap: 0.75rem;">
-      <img src="assets/icons/trials.png" alt="" width="24" height="24" />
+      <Image src={iconTrial} alt="" width="24" height="24" loading="eager" />
       <a href="/t/">View all **Trial** guides</a>
     </div>
   </Card>
   <Card title="">
     <div style="display: flex; align-items: center; gap: 0.75rem;">
-      <img src="assets/icons/dungeons.png" alt="" width="24" height="24" />
+      <Image src={iconDungeon} alt="" width="24" height="24" loading="eager" />
       <a href="/d">View all **Dungeon** guides</a>
     </div>
   </Card>
 </CardGrid>
 
 <Card title="Patch 7.55 Trail to the Heavens ⋅ Launched July 28, 2026">
-  <img src="assets/banners/dawntrail_banner.png" alt="Final Fantasy XIV: Dawntrail logo" />
+  <Image
+  src={currentExpansionBanner}
+  alt="Final Fantasy XIV: Dawntrail logo"
+  loading="eager"
+  fetchpriority="high"
+  />
   <br />
 
 <div style="text-align: center">

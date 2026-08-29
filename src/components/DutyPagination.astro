@@ -11,64 +11,62 @@
 //   <DutyPagination />
 //
 
-import fs from 'node:fs';
-import path from 'node:path';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import iconRaid from '../assets/icons/raids.png';
+import iconTrial from '../assets/icons/trials.png';
+import iconDungeon from '../assets/icons/dungeons.png';
+import iconARR from '../assets/icons/arr.png';
+import iconHW from '../assets/icons/heavensward.png';
+import iconSB from '../assets/icons/stormblood.png';
+import iconSHB from '../assets/icons/shadowbringers.png';
+import iconEW from '../assets/icons/endwalker.png';
+import iconDT from '../assets/icons/dawntrail.png';
 
-// Icons live in public/assets/icons/ so they're referenced by plain URL
-const ICONS_DIR = path.join(process.cwd(), 'public', 'assets', 'icons');
-
-// Returns the icon's public URL, or undefined if the file doesn't exist
-// yet (e.g. a newly-added expansion without artwork), so the template
-// can skip rendering an <img> instead of showing a broken image.
-function iconUrl(filename: string): string | undefined {
-  if (!filename) return undefined;
-  const exists = fs.existsSync(path.join(ICONS_DIR, `${filename}.png`));
-  return exists ? `/assets/icons/${filename}.png` : undefined;
-}
-
-// ADD NEW EXPANSIONS HERE when they release:
-const EXPANSIONS: Record<string, { label: string; icon: string }> = {
-  arr: { label: 'A Realm Reborn', icon: 'arr' },
-  hw: { label: 'Heavensward', icon: 'heavensward' },
-  sb: { label: 'Stormblood', icon: 'stormblood' },
-  shb: { label: 'Shadowbringers', icon: 'shadowbringers' },
-  ew: { label: 'Endwalker', icon: 'endwalker' },
-  dt: { label: 'Dawntrail', icon: 'dawntrail' },
-  ec: { label: 'Evercold', icon: 'ec' }, // no icon yet
-  // next-expansion-shorthand: { label: 'Next Expansion Display Name', icon: 'filename' },
+// ADD NEW EXPANSIONS HERE when they release. Omit `icon` entirely
+// if artwork doesn't exist yet
+const EXPANSIONS: Record<string, { label: string; icon?: ImageMetadata }> = {
+  arr: { label: 'A Realm Reborn', icon: iconARR },
+  hw: { label: 'Heavensward', icon: iconHW },
+  sb: { label: 'Stormblood', icon: iconSB },
+  shb: { label: 'Shadowbringers', icon: iconSHB },
+  ew: { label: 'Endwalker', icon: iconEW },
+  dt: { label: 'Dawntrail', icon: iconDT },
+  // ec: { label: 'Evercold' }, // no icon yet
+  // next-expansion-shorthand: { label: 'Next Expansion Display Name', icon: iconNext },
 };
 
-const DUTY_TYPES: Record<string, { label: string; icon: string }> = {
-  t: { label: 'Trials', icon: 'trials' },
-  a: { label: 'Alliance Raids', icon: 'raids' },
-  r: { label: 'Raids', icon: 'raids' },
-  d: { label: 'Dungeons', icon: 'dungeons' },
+const DUTY_TYPES: Record<string, { label: string; icon?: ImageMetadata }> = {
+  t: { label: 'Trials', icon: iconTrial },
+  a: { label: 'Alliance Raids', icon: iconRaid },
+  r: { label: 'Raids', icon: iconRaid },
+  d: { label: 'Dungeons', icon: iconDungeon },
 };
 
 // URL shape is always /{type}/{expansion}/{duty-slug}
 const segments = Astro.url.pathname.split('/').filter(Boolean);
 const [type, expansion] = segments;
 
-const dutyType = DUTY_TYPES[type] ?? { label: type, icon: '' };
-const expansionInfo = EXPANSIONS[expansion] ?? { label: expansion, icon: '' };
+const dutyType = DUTY_TYPES[type] ?? { label: type };
+const expansionInfo = EXPANSIONS[expansion] ?? { label: expansion };
 
 const prevHref = `/${type}/${expansion}/`;
 const prevLabel = `All ${expansionInfo.label} ${dutyType.label}`;
-const prevIcon = iconUrl(expansionInfo.icon);
+const prevIcon = expansionInfo.icon;
 
 const nextHref = `/${type}/`;
 const nextLabel = `All ${dutyType.label}`;
-const nextIcon = iconUrl(dutyType.icon);
+const nextIcon = dutyType.icon;
 ---
 
 <div class="pagination-links print:hidden">
   <a class="prev" href={prevHref} rel="prev">
-    {prevIcon && <img src={prevIcon} alt="" width="28" height="28" />}
+    {prevIcon && <Image src={prevIcon} alt="" width={28} height={28} loading="eager" />}
     <span class="link-title">{prevLabel}</span>
   </a>
   <a class="next" href={nextHref} rel="next">
     <span class="link-title">{nextLabel}</span>
-    {nextIcon && <img src={nextIcon} alt="" width="28" height="28" />}
+    {nextIcon && <Image src={nextIcon} alt="" width={28} height={28} loading="eager" />}
   </a>
 </div>
 
