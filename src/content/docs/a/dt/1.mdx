@@ -1,0 +1,133 @@
+---
+title: 'Jeuno: The First Walk'
+hero:
+  tagline: "Echoes of Vana'diel: First Dawntrail 24-man alliance raid"
+description: "TLDR Guide for FFXIV's Jeuno: The First Walk (Prishe of the Distant Chains, Fafnir the Forgotten, The Ark Angels, Shadow Lord) - Dawntrail 7.1 Alliance Raid"
+tags:
+  - alliance
+  - dawntrail
+  - echoes-of-vanadiel
+  - lvl100
+  - '7.1'
+tableOfContents: false
+---
+
+import DutyPagination from '../../../../components/DutyPagination.astro';
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<div data-pagefind-ignore>
+<Tabs>
+  <TabItem label="Prishe of the Distant Chains">
+    :::tank
+      **TB**: Nullifying Dropkick (shared)
+    :::
+    :::healer
+      **RW**: Banishga, Banishga IV
+
+      **Asuran Fists**: <mark>Multi</mark> Tower & Stack Marker
+    :::
+
+    ___
+
+    - **Knuckle Sandwich** ("_Wait for it.._"): Number of times fist glows determines which marked Circles will explode (starting from Center)
+      - Immediately followed by untelegraphed Donut
+    - **Banish Storm**: Two sets of three [Exaflares](glossary:exaflare) in indicated direction
+    - **Holy**: Spread, **do not overlap**!
+    - **Crystalline Thorns / Auroral Uppercut**: Watch for number of times fist glows, indicating which arc will be used.
+    - **Banishga IV**: Inward our outward traveling Circle AoE's, indicated by enlarged orbs
+
+  </TabItem>
+
+  <TabItem label="Fafnir the Forgotten">
+    :::tank
+      **TB**: Sharp Spike (all tanks)
+    :::
+    :::healer
+      **RW**: Dark Matter Blast, <mark>L, Multi</mark> Hurricane Wing
+
+      **Baleful Breath**: <mark>Multi</mark> Line Stack
+
+      **Esuna**: Offensive Posture (Out, Concussion)
+    :::
+    ___
+
+    - **Offensive Posture**: Attacks based on animation
+      - _Fafnir raises its tail..._: Front is safe
+      - _An intense heat radiates from Fafnir's mouth..._: Untelegraphed Donut
+      - _Fafnir makes ready to land..._: Large Out
+    - _Tempestuous winds begin blowing through the aery..._
+      - Traveling Out or Donut, direction indicated by arrows. Mind lingering tornadoes moving around the arena.
+
+  </TabItem>
+
+  <TabItem label="The Ark Angels">
+    :::tank
+    _One add will be assigned to your alliance party._
+
+      **TB**: Cloudsplitter (all tanks)
+    :::
+    :::healer
+      **RW**: Dominion Slash (EV), Holy (EV), <mark>L</mark> Meteor (TT, if not interrupted), Mighty Strikes (HM)
+
+      **Arrogance Incarnate**: <mark>Multi</mark> Stack Marker
+    :::
+    :::all
+    Interrupt **Meteor** (TT, _Ark Angle TT begins incanting..._).
+
+    Interrupt **Mijin Gakure** (HM, after EV's shield is broken). Will wipe raid if not stopped.
+
+    Interrupt **Critical Reaver** (2nd cast, following **Mighty Strikes**).
+    :::
+    ___
+
+    ### MR, GK, TT
+
+    - Only your assigned add can be damaged
+    - **Meikyo Shisui**: Crossing Line AoE's, expanding Circle AoE (flower), Gaze
+      - Ends with Conal AoE's into Donut (flower)
+    - **Guillotine**: Back of TT is safe. Four hits.
+
+    ### HM and EV
+
+    - Tethers: Move away from clones, they crit
+    - Destroy shield and interrupt **Mijin Gakure** or the party wipes
+    - **Rampage**: Sequential Line AoE's finishing in large Circle AoE
+
+  </TabItem>
+
+  <TabItem label="Kindred Rage: Shadow Lord">
+    :::tank
+      **TB**: Unbridled Rage (all tanks)
+    :::
+    :::healer
+      **RW**: Flames of Hatred, Cthonic Fury, <mark>L</mark> Doom Arc, Tera Slash (Ultimate)
+
+      **Echoes of Agony**: <mark>Multi</mark> Stack Marker
+    :::
+    :::all
+    Mitigate _Tera Slash_ (Ultimate) if undergeared.
+    :::
+
+    ___
+
+    - **Giga Slash**: Sequential Conals in sword-indicated directions.
+      - **Nightfall**: additional 3rd cleave (front/behind).
+      - Clone repeats Giga Slash.
+    - **Umbra Smash**: Sequential cardinal Line AoEs, expand outward after resolving.
+      - Combines with centered Plus (last phase).
+    - **Implosion**: Out, Half-Room indicated by larger orb.
+      - Clone repeats Implosion.
+    - _Hatred spills forth from the Shadow Lord's dark sigils.._
+      - Spike direction: Out/Donut.
+      - Combined with additional Circle-spike: adds Conal in indicated direction
+      - Combined with Square-spike: adds Line AoE in indicated direction
+    - **Binding Sigil**: Delayed Circle AoE sets. Stand in last set, move to first once it has exploded.
+    - **Dark Nebula**: 4 sequential knockbacks. Position for CW/CCW Knockbacks.
+      - Followed by Giga Slash: Nightfall.
+
+  </TabItem>
+</Tabs>
+
+<DutyPagination />
+</div>
