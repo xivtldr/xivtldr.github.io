@@ -11,4 +11,15 @@ tableOfContents: false
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
+import { Image } from 'astro:assets';
+import ffxivLanding from '../../../assets/banners/ffxiv_banner.png';
+
+<Image src={ffxivLanding} alt="Final Fantasy XIV Logo" />
+<br />
+**Dungeons** are Final Fantasy XIV's 4-man content that pits players against a
+series of bosses. Each expansion launches with story-relevant MSQ dungeons, and
+adds new Level Cap dungeons with patches.
+
+## Guides for Final Fantasy XIV's dungeons
+
 <LinkCard title="Dawntrail" href="/d/dt" />

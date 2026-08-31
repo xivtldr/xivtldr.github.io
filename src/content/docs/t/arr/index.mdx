@@ -10,8 +10,18 @@ tableOfContents: false
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import dtTrialsLanding from '../../../../assets/banners/arr_banner.png';
 
-## MSQ
+<Image src={dtTrialsLanding} alt="Logo of A Realm Reborn, FFXIV's base game" />
+
+**A Realm Reborn** is the launch version of Final Fantasy XIV. It was released on August 27, 2013 with Patch 2.0 and concluded with Patch 2.57 on May 11, 2015.
+
+A Realm Reborn added 17 trials to the game.
+
+## Guides for A Realm Reborn's Trials
+
+### MSQ
 
 <CardGrid>
   <LinkCard title="The Bowl of Embers" href="/t/arr/1" />
@@ -28,7 +38,7 @@ import { LinkCard, CardGrid } from '@astrojs/starlight/components';
   <LinkCard title="The Chrysalis" href="/t/arr/16" />
 </CardGrid>
 
-## Special
+### Special
 
 <CardGrid>
   <LinkCard title="A Relic Reborn: The Chimera" href="/t/arr/9" />

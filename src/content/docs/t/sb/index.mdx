@@ -10,6 +10,19 @@ tableOfContents: false
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import sbTrialsLanding from '../../../../assets/banners/stormblood_banner.png';
+
+<Image
+  src={sbTrialsLanding}
+  alt="Logo of Stormblood, FFXIV's second expansion"
+/>
+
+**Stormblood** is the second expansion for Final Fantasy XIV. It was released on June 20, 2017 with Patch 4.0 and concluded with Patch 4.58 on May 14, 2019.
+
+Stormblood added 9 trials to the game.
+
+## Guides for Stormblood's Trials
 
 <CardGrid>
   <LinkCard title="The Pool of Tribute" href="/t/sb/1" />

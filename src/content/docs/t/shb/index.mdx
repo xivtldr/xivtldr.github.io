@@ -10,6 +10,19 @@ tableOfContents: false
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import shbTrialsLanding from '../../../../assets/banners/shadowbringers_banner.png';
+
+<Image
+  src={shbTrialsLanding}
+  alt="Logo of Shadowbringers, FFXIV's third expansion"
+/>
+
+**Shadowbringers** is the third expansion for Final Fantasy XIV. It was released on July 2, 2019 with Patch 5.0 and concluded with Patch 5.58 on July 19, 2021.
+
+Shadowbringers added 7 trials to the game.
+
+## Guides for Shadowbringers' Trials
 
 <CardGrid>
   <LinkCard title="The Dancing Plague" href="/t/shb/1" />

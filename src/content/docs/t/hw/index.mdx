@@ -10,6 +10,19 @@ tableOfContents: false
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import hwTrialsLanding from '../../../../assets/banners/heavensward_banner.png';
+
+<Image
+  src={hwTrialsLanding}
+  alt="Logo of Heavensward, FFXIV's first expansion"
+/>
+
+**Heavensward** is the first expansion for Final Fantasy XIV. It was released on June 23, 2015 with Patch 3.0 and concluded with Patch 3.57 on April 17, 2017.
+
+Heavensward added 7 trials to the game.
+
+## Guides for Heavensward's Trials
 
 <CardGrid>
   <LinkCard title="Thok ast Thok (Hard)" href="/t/hw/1" />

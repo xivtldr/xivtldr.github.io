@@ -10,6 +10,16 @@ tableOfContents: false
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import ffxivLanding from '../../../assets/banners/ffxiv_banner.png';
+
+<Image src={ffxivLanding} alt="Final Fantasy XIV Logo" />
+<br />
+**Trials** are Final Fantasy XIV's 8-man story content that pits players against
+a single boss. Each expansion launches with story-relevant MSQ trials, and adds
+new trials with patches.
+
+## Guides for Final Fantasy XIV's Trials
 
 <LinkCard title="Dawntrail" href="/t/dt" />
 <LinkCard title="Endwalker" href="/t/ew" />

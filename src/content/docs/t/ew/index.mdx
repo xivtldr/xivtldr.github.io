@@ -10,8 +10,19 @@ tableOfContents: false
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import ewTrialsLanding from '../../../../assets/banners/endwalker_banner.png';
 
-_Endwalker MSQ Trials._
+<Image
+  src={ewTrialsLanding}
+  alt="Logo of Endwalker, FFXIV's fourth expansion"
+/>
+
+**Endwalker** is the fourth expansion for Final Fantasy XIV. It was released on December 7, 2021 with Patch 6.0 and concluded with Patch 6.58 on March 19, 2024.
+
+Endwalker added 8 trials to the game.
+
+## Guides for Endwalker's Trials
 
 <CardGrid>
   <LinkCard title="The Dark Inside" href="/t/ew/1" />
