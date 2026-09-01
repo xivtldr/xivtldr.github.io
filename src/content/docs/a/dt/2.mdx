@@ -1,0 +1,115 @@
+---
+title: "San d'Oria: The Second Walk"
+hero:
+  tagline: "Echoes of Vana'diel: Second Dawntrail 24-man alliance raid"
+description: "TLDR Guide for FFXIV's San d'Oria: The Second Walk (Faithbound Kirin, Ultima the Feared, Omega the One, Kam'lanaut, Eald'narche) - Dawntrail 7.3 Alliance Raid"
+tags:
+  - alliance
+  - dawntrail
+  - echoes-of-vanadiel
+  - lvl100
+  - '7.3'
+tableOfContents: false
+---
+
+import DutyPagination from '../../../../components/DutyPagination.astro';
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<div data-pagefind-ignore>
+<Tabs>
+  <TabItem label="Faithbound Kirin">
+    :::tank
+      **TB**: Deadly Hold (Towers, each tank)
+    :::
+    :::healer
+      **RW**: Stonega IV, Shattering Stomp (Genbu), <mark>Multi</mark> Kirin Captivator
+    :::
+
+    ___
+
+    - **Wrought Arms / Synchronized Strike**: Center into Side AoE. Repeats with changed Center orientation
+    - **Wringer**: Out into Donut
+      - **Double Wringer**: Wrought Arms / Wringer Combo.
+    - **Crimson Riddle**: Half-Room, back (glowing tail) or front (fire)
+    - **Summon Shijin**
+      - Moonbound Genbu: Avoid Spouts, mind Donut
+      - Duskbound Byakko: Center Dash, followed by large Circle AoE on endpoint
+      - Dawnbound Seiryu: Rotating AoE. Repeats.
+      - Sunbound Suzaku: Expanding Circle AoE with Charge through Center
+    - **Striking Left/Right**: Large Circle AoE under tethered arm
+    - **Synchronized Sequence** / **Smiting (Left/Right) Sequence**: Combos AoE
+      - Out/Donut or Center/Sides sequence followed by Large AoE under tethered arm
+      - Reverse order for Smiting Left/Right
+
+  </TabItem>
+
+  <TabItem label="Ultima, the Feared / Omega, the One">
+    :::tank
+      **TB**: Antimatter (Ultima, each tank)
+    :::
+    :::healer
+      **RW**: Ion Efflux (Omega), <mark>L</mark> Citadel Buster (Omega)
+    :::
+    ___
+
+    - **Aft-to-fore Fire / Fore-to-aft Fire**: Half-Room in indicated direction. Delayed resolve, repeats.
+    - **Tractor Beam**: Knockback, mind half of small ship (cleaves)
+    - **Surface Missile**: Memorize sequential AoE locations
+    - **Mana Screen**: Line AoE is now reflected by 90° in angled direction
+      - Attack reflects on two screens with next cast, third screen won't be hit.
+    - **Chemical Bomb**: Sequential [Proximity Markers](glossary:proximity-marker). Rotate with spawn order.
+
+  </TabItem>
+
+  <TabItem label="Kam'lanaut">
+    :::tank
+      **TB**: Princely Blow (Knockback, each tank)
+    :::
+    :::healer
+      **RW**: Enspirited Swordplay, <mark>L, Multi</mark> Transcendent Union
+    :::
+    :::all
+    Mitigate **Transcendent Union**
+    :::
+    ___
+
+    - **Elemental Blade**: Memorize two imbued elements, indicated by dropping rings around boss
+      - **Sublime Elements**: Conals or Line AoE's of imbued elements will expand
+      - Three imbued elements in phase 2
+    - **Light Blade**: Centered Line AoE followed by alternating Line AoE's
+    - **Great Wheel**: Out into Half-Room in front. Boss direction changes after Out.
+    - **Crystalline Resonance**: Three sets of one expanding Circle AoE. Crystals hit by corresponding element explode in large Out.
+      - 2nd cast: Now has two expanding Circle AoE's
+    - **Shield Bash / Illumed Facet**: Only bridge not faced by clones is safe
+
+  </TabItem>
+
+  <TabItem label="Legacy of the Zilart: Eald'narche">
+    :::tank
+      **TB**: Uranos Cascade (each tank)
+    :::
+    :::healer
+      **RW**: <mark>Multi</mark> Empyreal Vortex
+    :::
+
+    ___
+
+    - **Cronos Sling**: Out/Donut indicated by floating cards surrounding boss
+      - Followed by Half-Room, side indicated by same cards
+    - **Warp**: Move to indicated TP location in corner
+      - Followed by large frontal cleave
+    - **Gaea Stream**: Traveling Line AoE's. Wait next to first Line Aoe, move into it once it goes off.
+      - Two sets in last phase. Move into first, move back, move into first again.
+    - **Omega Javelin**: Spread, Circle AoE's have delayed explosion
+    - **Duplicate**: Plus
+      - **Visions of Paradise**: Two Plus, one will have position swapped as indicated by tether
+      - First identify safe spot from static Plus, then resolve moving Plus. One safe spot only.
+    - **Ancient Triad**: Proximity Marker or Pull
+      - Proximity Marker turns into Out followed by Donut
+
+  </TabItem>
+</Tabs>
+
+<DutyPagination />
+</div>
