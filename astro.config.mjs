@@ -138,7 +138,7 @@ export default defineConfig({
           items: [
             // { label: 'Evercold', link: 'r/ec/' },
             { label: 'Dawntrail', link: 'r/dt/' },
-            // { label: 'Endwalker', link: 'r/ew/' },
+            { label: 'Endwalker', link: 'r/ew/' },
             // { label: 'Shadowbringers', link: 'r/shb/' },
             // { label: 'Stormblood', link: 'r/sb/' },
             { label: 'Heavensward', link: 'r/hw/' },
