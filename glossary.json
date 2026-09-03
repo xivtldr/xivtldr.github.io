@@ -78,7 +78,8 @@
       "term": "Charge",
       "aliases": [
         "Charge",
-        "Dash"
+        "Dash",
+        "Charges"
       ],
       "wikipedia": null,
       "caseSensitive": true,
@@ -242,7 +243,8 @@
       "aliases": [
         "Half-Room",
         "Half-Width",
-        "Haircut"
+        "Haircut",
+        "Half-Rooms"
       ],
       "wikipedia": null,
       "caseSensitive": true,
