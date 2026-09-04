@@ -1,0 +1,71 @@
+---
+title: The Tower of Zot
+hero:
+  tagline: 'Endwalker MSQ Dungeon (Lvl. 81)'
+description: "TLDR Guide for FFXIV's The Tower of Zot (Minduruva, Sanduruva, Magus Sisters) - Endwalker 6.0 Level 81 Dungeon"
+tags:
+  - dungeon
+  - leveling
+  - endwalker
+  - lvl81
+  - '6.0'
+tableOfContents: false
+---
+
+import DutyPagination from '../../../../components/DutyPagination.astro';
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+<div data-pagefind-ignore>
+
+<Tabs>
+  <TabItem label="Minduruva">
+    :::tank
+      **TB**: Manusya Bio
+    :::
+    :::healer
+      **RW**: Dhrupad (DoT, after every Transmute)
+    :::
+
+    - Elemental Attacks
+      - **Manuysa Fire III**: Donut
+      - **Manusya Blizzard III**: 12 Conal AoE's, originating from boss
+      - **Manusya Thunder III**: Outward traveling small Circle AoE's
+      - **Manusya Bio III**: 180° Cleave in front of boss
+    - Transmute Elemental Attacks
+      - Orb traveling towards marker will trigger elemental attack at that location
+
+  </TabItem>
+
+  <TabItem label="Sanduruva">
+    :::tank
+      **TB**: Isitva Siddhi
+    :::
+
+    - **Manusya Berserk**: Stand in gap w/o orb. Large Circle AoE's.
+    - **Manusya Confuse**: The real boss will always be the one *not emoting*.
+      - Clones will explode in large Circle AoE's, run behind boss.
+
+  </TabItem>
+    <TabItem label="Harbingers Elect: The Magus Sisters">
+    :::tank
+      **TB**: Sanduruva (after Delta Attack)
+    :::
+    :::healer
+      **RW**: Samsara
+    :::
+    :::all 
+    Defeat Cinduruva (can res other bosses) → Sanduruva/Minduruva. 
+    
+    Delta Attacks will stop after Cinduruva is defeated.
+    :::
+
+    - **Delta Attack**: As long as Cinduruva is alive, all attacks will be reflected by each boss.
+      - _"Glacial ice, entomb our foes!"_: Conals and Line AoE's, paired with proximity markers.
+      - _"Thunderous tempest, smite our foes!"_: Circle and Line AoE's, paired with Stack Marker.
+      - _"Insatiable flame, consume our foes!"_: Donut into Line AoE's into Donut, Spread.
+
+  </TabItem>
+</Tabs>
+<DutyPagination />
+</div>
